@@ -26,7 +26,7 @@ public class Tester{
     int[][] empty2=new int[1][0];
     int[][] empty3=new int[0][0];
 
-    System.out.println(ArrayOps.sum(a)); //expecting 19
+  /*  System.out.println(ArrayOps.sum(a)); //expecting 19
     System.out.println(ArrayOps.sum(b)); //expecting 20
     System.out.println(ArrayOps.sum(c)); //expecting 600
     System.out.println(ArrayOps.sum(d)); //expecting 0
@@ -48,6 +48,15 @@ public class Tester{
     System.out.println(Arrays.toString(ArrayOps.largestInRows(x))); //expecting [5, 8]
     System.out.println(Arrays.toString(ArrayOps.largestInRows(y))); //expecting [5, 200]
     System.out.println(Arrays.toString(ArrayOps.largestInRows(z))); //expecting [5, 8, 200, 8]
+
+*/
+    //testing 4e
+    System.out.println(ArrayOps.sum(x)); //expecting 39
+    System.out.println(ArrayOps.sum(y)); //expecting 619
+    System.out.println(ArrayOps.sum(z)); //expecting 659
+    System.out.println(ArrayOps.sum(empty)); //expecting 0
+    System.out.println(ArrayOps.sum(empty2)); //expecting 0
+    System.out.println(ArrayOps.sum(empty3)); //expecting 0
 
     //
     /*System.out.println(ArrayOps.
