@@ -26,6 +26,16 @@ public class Tester{
     int[][] empty2=new int[1][0];
     int[][] empty3=new int[0][0];
 
+    int[][] rect = new int[2][4];
+    rect[0]=b;
+    rect[1]=c;
+
+    int[][] rect2 = new int[4][4];
+    rect2[0]=b;
+    rect2[1]=c;
+    rect2[2]=c;
+    rect2[3]=b;
+
     int[][]  A = { {  1,  0, 12, -1 },
                   {  7, -2,  2,  1 },
                   { -5, -2,  2, -9 }
@@ -63,7 +73,7 @@ public class Tester{
     System.out.println(ArrayOps.sum(empty)); //expecting 0
     System.out.println(ArrayOps.sum(empty2)); //expecting 0
     System.out.println(ArrayOps.sum(empty3)); //expecting 0
-*/
+
     //Mr. K's tests for 4
     System.out.println( Arrays.toString(ArrayOps.sumRows(A))); //expected output:[12, 8, -14]
 
@@ -73,8 +83,13 @@ public class Tester{
 
     System.out.println( ArrayOps.sum(A));   //this calls the overloaded 2d array version!
     //expected output: 6
-
-    //
+*/
+    //testing 5a
+    System.out.println(Arrays.toString(ArrayOps.sumCols(rect))); //expecting [102, 154, 158, 206]
+    System.out.println(Arrays.toString(ArrayOps.sumCols(rect2))); //expecting [204, 308, 316, 412]
+    System.out.println(Arrays.toString(ArrayOps.sumCols(empty))); //expecting []
+    System.out.println(Arrays.toString(ArrayOps.sumCols(empty2))); //expecting []
+    System.out.println(Arrays.toString(ArrayOps.sumCols(empty3))); //expecting []
     /*System.out.println(ArrayOps.
     System.out.println(ArrayOps.
     System.out.println(ArrayOps.
