@@ -41,6 +41,11 @@ public class Tester{
     rect2[2]=c;
     rect2[3]=b;
 
+    int[][] rect3 = { {1, 2, 3},
+                      {9, 7, 5},
+                      {5, 7, 9},
+                      {3, 2, 1}};
+
     int[][]  A = { {  1,  0, 12, -1 },
                   {  7, -2,  2,  1 },
                   { -5, -2,  2, -9 }
@@ -96,13 +101,25 @@ public class Tester{
     System.out.println(Arrays.toString(ArrayOps.sumCols(empty2))); //expecting []
     System.out.println(Arrays.toString(ArrayOps.sumCols(empty3))); //expecting []
 
-  */
-
     //testing 5b
     System.out.println(ArrayOps.isRowMagic(x)); //expecting false
     System.out.println(ArrayOps.isRowMagic(y)); //expecting false
     System.out.println(ArrayOps.isRowMagic(z)); //expecting false
     System.out.println(ArrayOps.isRowMagic(w)); //expecting true
+    System.out.println(ArrayOps.isRowMagic(empty)); //expecting true
+    System.out.println(ArrayOps.isRowMagic(empty2)); //expecting true
+    System.out.println(ArrayOps.isRowMagic(empty3)); //expecting true
+
+    */
+
+    //testing 5c
+    System.out.println(ArrayOps.isColMagic(rect)); //expecting false
+    System.out.println(ArrayOps.isColMagic(rect2)); //expecting false
+    System.out.println(ArrayOps.isColMagic(rect3)); //expecting true
+    System.out.println(ArrayOps.isColMagic(w)); //expecting false
+    System.out.println(ArrayOps.isColMagic(empty)); //expecting true
+    System.out.println(ArrayOps.isColMagic(empty2)); //expecting true
+    System.out.println(ArrayOps.isColMagic(empty3)); //expecting true
 
   }
 }
