@@ -11,7 +11,7 @@ public class ArrayOps{
   public static int largest(int[] arr){
     int largest=arr[0];
     for (int i=0; i<arr.length; i++){
-      if (largest>arr[i]){
+      if (arr[i]>largest){
         largest=arr[i];
       }
     }
