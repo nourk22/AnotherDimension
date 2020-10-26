@@ -47,12 +47,21 @@ public class ArrayOps{
     }
     return sum;
   }
-/*
-  public static int[] sumCols(int[][] matrix){
 
+  public static int[] sumCols(int[][] matrix){
+    int[] sumCols = new int[matrix.length];
+    int curr_sum=0;
+    for (int col=0; col<matrix[0].length; col++){
+      for (int row=0; row<matrix.length; row++){
+        curr_sum+=matrix[row][col];
+      }
+      sumCols[col]=curr_sum;
+      curr_sum=0;
+    }
+    return sumCols;
   }
 
-  public static boolean isRowMagic(int[][] matrix){
+  /*public static boolean isRowMagic(int[][] matrix){
 
   }
 
