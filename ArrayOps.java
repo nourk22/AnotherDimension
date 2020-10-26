@@ -8,11 +8,17 @@ public class ArrayOps{
     return sum;
   }
 
-  /*public static int largest(int[] arr){
-
+  public static int largest(int[] arr){
+    int largest=arr[0];
+    for (int i=0; i<arr.length; i++){
+      if (largest>arr[i]){
+        largest=arr[i];
+      }
+    }
+    return largest;
   }
 
-  public static int[] sumRows(int[][] matrix){
+  /*public static int[] sumRows(int[][] matrix){
 
   }
 
@@ -39,9 +45,10 @@ public class ArrayOps{
   public static boolean isLocationMagic(int[][] matrix, int row, int col){
 
   }
+  */
 
   public static void main(String[] args) {
 
   }
-  */
+
 }
