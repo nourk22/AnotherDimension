@@ -48,8 +48,13 @@ public class ArrayOps{
     return sum;
   }
 
+  //5a
   public static int[] sumCols(int[][] matrix){
-    int[] sumCols = new int[matrix.length];
+    if (matrix.length==0){
+      int[] empty={};
+      return empty;
+    }
+    int[] sumCols = new int[matrix[0].length];
     int curr_sum=0;
     for (int col=0; col<matrix[0].length; col++){
       for (int row=0; row<matrix.length; row++){
