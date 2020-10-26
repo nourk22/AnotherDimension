@@ -118,13 +118,42 @@ public class Tester{
     System.out.println(ArrayOps.isColMagic(empty)); //expecting true
     System.out.println(ArrayOps.isColMagic(empty2)); //expecting true
     System.out.println(ArrayOps.isColMagic(empty3)); //expecting true
-*/
+
 
     //testing 5d
     System.out.println(ArrayOps.isLocationMagic(rect, 0, 2)); //expecting false
     System.out.println(ArrayOps.isLocationMagic(rect2, 3, 3)); //expecting false
     System.out.println(ArrayOps.isLocationMagic(rect3, 1, 2)); //expecting false
     System.out.println(ArrayOps.isLocationMagic(w, 1, 4)); //expecting false
+*/
+
+    int[][] C ={ {  1,  2, 3, 4 },
+                  {  2, 3,  4,  1 },
+                  { 3, 4,  1, 2 } };  //this is rowMagic but NOT colMagic
+
+    int[][] D={ {  1,  1, 1 },
+                {  2, 2, 2 },
+                { 3,  3, 3 } };  //this is colMagic but NOT rowMagic
+
+    int[][] F={ {  2, 2, 2 },
+                {  2, 2, 2 } };  //this is both colMagic AND rowMagic
+
+    int[][] E = { {  2, 4, 2 },
+                  {  2, 2, 2 } };
+
+    //Mr. K's tests for #5
+    System.out.println( Arrays.toString(ArrayOps.sumCols(A)));  //expected output: [3, -4, 16, -9]
+    System.out.println();
+    System.out.println(ArrayOps.isRowMagic(C)); //expecting true
+    System.out.println(ArrayOps.isRowMagic(D)); //expecting false
+    System.out.println(ArrayOps.isRowMagic(F)); //expecting true
+    System.out.println();
+    System.out.println(ArrayOps.isColMagic(C)); //expecting false
+    System.out.println(ArrayOps.isColMagic(D)); //expecting true
+    System.out.println(ArrayOps.isColMagic(F)); //expecting true
+    System.out.println();
+    System.out.println(ArrayOps.isLocationMagic(E, 0, 1)); //expecting False, 2 + 4 + 2  !=  4 + 2
+    System.out.println(ArrayOps.isLocationMagic(E, 1, 1)); //expecting  True,  2 + 2 + 2 == 4 + 2
 
   }
 }
