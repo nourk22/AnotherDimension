@@ -30,8 +30,6 @@ public class ArrayOps{
     return sumRows;
   }
 
-  // remember to test 4c for empty double array!!
-
   //4d
   public static int[] largestInRows(int[][] matrix){
     int[] largestPerRow = new int[matrix.length];
@@ -41,10 +39,15 @@ public class ArrayOps{
     return largestPerRow;
   }
 
-  /*public static int sum(int[][] arr){
-
+  //4e
+  public static int sum(int[][] arr){
+    int sum=0;
+    for (int i=0; i<sumRows(arr).length; i++){
+      sum+=sumRows(arr)[i];
+    }
+    return sum;
   }
-
+/*
   public static int[] sumCols(int[][] matrix){
 
   }
