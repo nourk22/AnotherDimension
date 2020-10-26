@@ -91,10 +91,13 @@ public class ArrayOps{
     return isMagic;
   }
 
-  /*public static boolean isLocationMagic(int[][] matrix, int row, int col){
-
+  public static boolean isLocationMagic(int[][] matrix, int row, int col){
+    int[] sumRows=new int [matrix.length];
+    sumRows=sumRows(matrix);
+    int[] sumCols=new int [matrix.length];
+    sumCols=sumCols(matrix);
+    return sumRows[row]==sumRows[col];
   }
-  */
 
   public static void main(String[] args) {
 
