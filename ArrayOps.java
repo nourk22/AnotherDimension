@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ArrayOps{
   //4a
   public static int sum(int[] arr){
@@ -8,6 +10,7 @@ public class ArrayOps{
     return sum;
   }
 
+  //4b
   public static int largest(int[] arr){
     int largest=arr[0];
     for (int i=0; i<arr.length; i++){
@@ -18,6 +21,7 @@ public class ArrayOps{
     return largest;
   }
 
+  //4c
   public static int[] sumRows(int[][] matrix){
     int[] sumRows = new int[matrix.length];
     for (int row=0; row<matrix.length; row++){
@@ -26,15 +30,22 @@ public class ArrayOps{
     return sumRows;
   }
 
-  /*public static int largestInRows(int[][] matrix){
+  // remember to test 4c for empty double array!!
+
+  //4d
+  public static int[] largestInRows(int[][] matrix){
+    int[] largestPerRow = new int[matrix.length];
+    for (int row=0; row<matrix.length; row++){
+      largestPerRow[row]=largest(matrix[row]);
+    }
+    return largestPerRow;
+  }
+
+  /*public static int sum(int[][] arr){
 
   }
 
-  public static int sum(int[][] arr){
-
-  }
-
-  public static int sumCols(int[][] matrix){
+  public static int[] sumCols(int[][] matrix){
 
   }
 
