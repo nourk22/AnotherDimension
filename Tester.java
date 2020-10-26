@@ -110,8 +110,6 @@ public class Tester{
     System.out.println(ArrayOps.isRowMagic(empty2)); //expecting true
     System.out.println(ArrayOps.isRowMagic(empty3)); //expecting true
 
-    */
-
     //testing 5c
     System.out.println(ArrayOps.isColMagic(rect)); //expecting false
     System.out.println(ArrayOps.isColMagic(rect2)); //expecting false
@@ -120,6 +118,13 @@ public class Tester{
     System.out.println(ArrayOps.isColMagic(empty)); //expecting true
     System.out.println(ArrayOps.isColMagic(empty2)); //expecting true
     System.out.println(ArrayOps.isColMagic(empty3)); //expecting true
+*/
+
+    //testing 5d
+    System.out.println(ArrayOps.isLocationMagic(rect, 0, 2)); //expecting false
+    System.out.println(ArrayOps.isLocationMagic(rect2, 3, 3)); //expecting false
+    System.out.println(ArrayOps.isLocationMagic(rect3, 1, 2)); //expecting false
+    System.out.println(ArrayOps.isLocationMagic(w, 1, 4)); //expecting false
 
   }
 }
