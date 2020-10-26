@@ -37,6 +37,11 @@ public class Tester{
     System.out.println(Arrays.toString(ArrayOps.sumRows(y))); //expecting [19, 600]
     System.out.println(Arrays.toString(ArrayOps.sumRows(z))); //expecting [19, 20, 600, 20]
 
+    //testing 4d
+    System.out.println(Arrays.toString(ArrayOps.largestInRows(x))); //expecting [5, 8]
+    System.out.println(Arrays.toString(ArrayOps.largestInRows(y))); //expecting [5, 200]
+    System.out.println(Arrays.toString(ArrayOps.largestInRows(z))); //expecting [5, 8, 200, 8]
+
     //
     /*System.out.println(ArrayOps.
     System.out.println(ArrayOps.
