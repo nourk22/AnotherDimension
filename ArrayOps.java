@@ -66,11 +66,20 @@ public class ArrayOps{
     return sumCols;
   }
 
-  /*public static boolean isRowMagic(int[][] matrix){
-
+  //5b
+  public static boolean isRowMagic(int[][] matrix){
+    boolean isMagic=true;
+    int[] sumRows=new int [matrix.length];
+    sumRows=sumRows(matrix);
+    for (int i=0; i<sumRows.length-1; i++){
+      if (sumRows[i]!=sumRows[i+1]){
+        isMagic=false;
+      }
+    }
+    return isMagic;
   }
 
-  public static boolean isColMagic(int[][] matrix){
+  /*public static boolean isColMagic(int[][] matrix){
 
   }
 
