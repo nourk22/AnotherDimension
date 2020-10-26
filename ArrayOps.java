@@ -18,11 +18,15 @@ public class ArrayOps{
     return largest;
   }
 
-  /*public static int[] sumRows(int[][] matrix){
-
+  public static int[] sumRows(int[][] matrix){
+    int[] sumRows = new int[matrix.length];
+    for (int row=0; row<matrix.length; row++){
+      sumRows[row]=sum(matrix[row]);
+    }
+    return sumRows;
   }
 
-  public static int largestInRows(int[][] matrix){
+  /*public static int largestInRows(int[][] matrix){
 
   }
 
