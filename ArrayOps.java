@@ -96,7 +96,7 @@ public class ArrayOps{
     sumRows=sumRows(matrix);
     int[] sumCols=new int [matrix.length];
     sumCols=sumCols(matrix);
-    return sumRows[row]==sumRows[col];
+    return sumRows[row]==sumCols[col];
   }
 
   public static void main(String[] args) {
