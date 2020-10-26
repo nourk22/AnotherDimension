@@ -2,8 +2,8 @@ import java.util.Arrays;
 
 public class Tester{
   public static void main(String[] args) {
-    //testing 4a
-    int[] a = {5, 2, 3, 4, 5};
+
+    /*int[] a = {5, 2, 3, 4, 5};
     int[] b = {2, 4, 8, 6};
     int[] c = {100, 150, 150, 200};
     int[] d = {};
@@ -52,7 +52,9 @@ public class Tester{
                };
     int[]  B  =   {  1, 3, 5 };
 
-  /*  System.out.println(ArrayOps.sum(a)); //expecting 19
+
+    //testing 4a
+    System.out.println(ArrayOps.sum(a)); //expecting 19
     System.out.println(ArrayOps.sum(b)); //expecting 20
     System.out.println(ArrayOps.sum(c)); //expecting 600
     System.out.println(ArrayOps.sum(d)); //expecting 0
@@ -125,7 +127,7 @@ public class Tester{
     System.out.println(ArrayOps.isLocationMagic(rect2, 3, 3)); //expecting false
     System.out.println(ArrayOps.isLocationMagic(rect3, 1, 2)); //expecting false
     System.out.println(ArrayOps.isLocationMagic(w, 1, 4)); //expecting false
-*/
+
 
     int[][] C ={ {  1,  2, 3, 4 },
                   {  2, 3,  4,  1 },
@@ -154,6 +156,6 @@ public class Tester{
     System.out.println();
     System.out.println(ArrayOps.isLocationMagic(E, 0, 1)); //expecting False, 2 + 4 + 2  !=  4 + 2
     System.out.println(ArrayOps.isLocationMagic(E, 1, 1)); //expecting  True,  2 + 2 + 2 == 4 + 2
-
+*/
   }
 }
