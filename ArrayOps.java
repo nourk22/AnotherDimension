@@ -79,11 +79,19 @@ public class ArrayOps{
     return isMagic;
   }
 
-  /*public static boolean isColMagic(int[][] matrix){
-
+  public static boolean isColMagic(int[][] matrix){
+    boolean isMagic=true;
+    int[] sumCols=new int [matrix.length];
+    sumCols=sumCols(matrix);
+    for (int i=0; i<sumCols.length-1; i++){
+      if (sumCols[i]!=sumCols[i+1]){
+        isMagic=false;
+      }
+    }
+    return isMagic;
   }
 
-  public static boolean isLocationMagic(int[][] matrix, int row, int col){
+  /*public static boolean isLocationMagic(int[][] matrix, int row, int col){
 
   }
   */
