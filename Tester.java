@@ -8,6 +8,11 @@ public class Tester{
     int[] c = {100, 150, 150, 200};
     int[] d = {};
 
+    int[][] w = new int[3][a.length];
+    w[0]=a;
+    w[1]=a;
+    w[2]=a;
+
     int[][] x = new int[2][b.length];
     x[0]=a;
     x[1]=b;
@@ -83,17 +88,21 @@ public class Tester{
 
     System.out.println( ArrayOps.sum(A));   //this calls the overloaded 2d array version!
     //expected output: 6
-*/
+
     //testing 5a
     System.out.println(Arrays.toString(ArrayOps.sumCols(rect))); //expecting [102, 154, 158, 206]
     System.out.println(Arrays.toString(ArrayOps.sumCols(rect2))); //expecting [204, 308, 316, 412]
     System.out.println(Arrays.toString(ArrayOps.sumCols(empty))); //expecting []
     System.out.println(Arrays.toString(ArrayOps.sumCols(empty2))); //expecting []
     System.out.println(Arrays.toString(ArrayOps.sumCols(empty3))); //expecting []
-    /*System.out.println(ArrayOps.
-    System.out.println(ArrayOps.
-    System.out.println(ArrayOps.
-    System.out.println(ArrayOps.
-    */
+
+  */
+
+    //testing 5b
+    System.out.println(ArrayOps.isRowMagic(x)); //expecting false
+    System.out.println(ArrayOps.isRowMagic(y)); //expecting false
+    System.out.println(ArrayOps.isRowMagic(z)); //expecting false
+    System.out.println(ArrayOps.isRowMagic(w)); //expecting true
+
   }
 }
